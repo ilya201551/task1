@@ -1,14 +1,14 @@
 # Task1
 
-** Class Students: **
+**Class Students:**
   - loads the list of students.
-** Class Rooms: **
+**Class Rooms:**
   - loads the list of rooms.
-** Class HostelList: **
+**Class HostelList:**
   - returns a combined dictionary .
-** Class HostelJson: **
+**Class HostelJson:**
   - returns a combined dictionary in jsom format.
-** Class HostelXml:
+**Class HostelXml:**
   - returns a combined dictionary in xml format.
-Class FormattedHostelList:
-  - calls either ** HostelJson ** or ** HostelXml ** depending on the parameter ** "format_" **.
+**Class FormattedHostelList:**
+  - calls either **HostelJson** or **HostelXml** depending on the parameter **"format_"**.
