@@ -1,19 +1,19 @@
 # Task1
 
-**Class Students:**
+**StudentsLoader.py:**
   - loads the list of students.
   
-**Class Rooms:**
+**RoomsLoader.py:**
   - loads the list of rooms.
   
-**Class HostelList:**
+**UnionHostelList.py:**
   - returns a combined dictionary .
   
-**Class HostelJson:**
-  - returns a combined dictionary in jsom format.
+**SaveHostelJson.py:**
+  - saving a combined dictionary in jsom format.
   
-**Class HostelXml:**
-  - returns a combined dictionary in xml format.
+**SaveHostelXml.py:**
+  - saving a combined dictionary in xml format.
   
-**Class FormattedHostelList:**
-  - calls either **HostelJson** or **HostelXml** depending on the parameter **"format_"**.
+**mane.py**
+  - calls either **SaveHostelJson** or **SaveHostelXml** depending on the parameter **"format_"**.
