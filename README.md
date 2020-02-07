@@ -15,5 +15,5 @@
 **SaveHostelXml.py:**
   - saving a combined dictionary in xml format.
   
-**mane.py**
+**main.py**
   - calls either **SaveHostelJson** or **SaveHostelXml** depending on the parameter **"format_"**.
