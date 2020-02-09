@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2d0a29a-8269-4972-852d-2e22ddfdb90d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/UnionHostelList.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hostel.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hostel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/task1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hostel.json" beforeDir="false" afterPath="$PROJECT_DIR$/Hostel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hostel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hostel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SaveHostelXml.py" beforeDir="false" afterPath="$PROJECT_DIR$/SaveHostelXml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UnionHostelList.py" beforeDir="false" afterPath="$PROJECT_DIR$/UnionHostelList.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,12 +15,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/UnionHostelList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="374">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -29,34 +29,35 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/main.py">
+        <entry file="file://$PROJECT_DIR$/Hostel.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="e#0#47#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-308462" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Hostel.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-323">
+              <caret line="118" column="13" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Hostel.xml">
+        <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+            <state relative-caret-position="340">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SaveHostelXml.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="e#1#35#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="343">
+              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -113,14 +114,14 @@
         <option value="$PROJECT_DIR$/RoomsLoader.py" />
         <option value="$PROJECT_DIR$/SaveHostelJson.py" />
         <option value="$PROJECT_DIR$/task1.py" />
-        <option value="$PROJECT_DIR$/UnionHostelList.py" />
         <option value="$PROJECT_DIR$/main.py" />
+        <option value="$PROJECT_DIR$/UnionHostelList.py" />
         <option value="$PROJECT_DIR$/SaveHostelXml.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="693" />
+    <option name="x" value="-7" />
     <option name="y" value="46" />
     <option name="width" value="714" />
     <option name="height" value="1011" />
@@ -131,7 +132,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -143,6 +143,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -165,7 +166,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.UnionHostelList">
+    <configuration name="UnionHostelList" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="task1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/UnionHostelList.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="hostelXml" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="task1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -231,6 +253,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.UnionHostelList" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.task1" />
         <item itemvalue="Python.hostelXml" />
@@ -252,7 +275,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="38" width="1416" height="1020" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.116836" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -297,13 +319,6 @@
     <entry file="file://$PROJECT_DIR$/test1.xml" />
     <entry file="file://$PROJECT_DIR$/test.xml" />
     <entry file="file://$PROJECT_DIR$/hostelXml.py" />
-    <entry file="file://$PROJECT_DIR$/Hostel.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-358153">
-          <caret line="138" column="25" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SaveHostelJson.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -325,40 +340,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/UnionHostelList.py">
+    <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SaveHostelXml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Hostel.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-308462" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/UnionHostelList.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
+    <entry file="file://$PROJECT_DIR$/Hostel.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Hostel.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SaveHostelXml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#1#35#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-323">
+          <caret line="118" column="13" selection-start-line="118" selection-start-column="13" selection-end-line="118" selection-end-column="13" />
         </state>
       </provider>
     </entry>

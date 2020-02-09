@@ -11,10 +11,12 @@ class HostelList:
     def __hostel_list(self):
         hostel_list = self.rooms_list[:]
         for student in self.students_list:
-            for room in hostel_list:
-                if 'students' in room.keys():
-                    if room['id'] == student['room']:
-                        room['students'].append(student)
-                else:
-                    room['students'] = []
+                for room in hostel_list:
+                    if 'students' in room.keys():
+                        if 'room' in student.keys() and room['id'] == student['room']:
+                            del student['room']
+                            room['students'].append(student)
+                    else:
+                        room['students'] = []
+
         return hostel_list

@@ -21,8 +21,6 @@ class HostelXml:
                 student_id.text = str(s['id'])
                 student_name = ET.SubElement(student, 'student_name')
                 student_name.text = str(s['name'])
-                student_room_id = ET.SubElement(student, 'student_room_id')
-                student_room_id.text = str(s['room'])
             self.save_xml_hostel_list(new)
 
     @staticmethod
