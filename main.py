@@ -12,9 +12,9 @@ def main():
     args = parser.parse_args()
 
     if args.format_.lower() == 'json':
-        HostelJson(HostelList(args.students_path, args.rooms_path).hostel_list)
+        HostelJson.save(HostelList(args.students_path, args.rooms_path).hostel_list)
     elif args.format_.lower() == 'xml':
-        HostelXml(HostelList(args.students_path, args.rooms_path).hostel_list).creating_xml_hostel_list()
+        HostelXml.save(HostelList(args.students_path, args.rooms_path).hostel_list)
     else:
         raise ValueError('Invalid format.')
 
