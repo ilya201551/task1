@@ -15,13 +15,7 @@ def parsing_args():
 def main():
     args = parsing_args()
     hostel_list = HostelList.getting_hostel_list(args.students_path, args.rooms_path)
-
-    if args.format_.lower() == 'json':
-        Saver.saving_json(hostel_list)
-    elif args.format_.lower() == 'xml':
-        Saver.saving_xml(hostel_list)
-    else:
-        raise ValueError('Invalid format.')
+    Saver().save(hostel_list, args.format_)
 
 
 if __name__ == '__main__':
