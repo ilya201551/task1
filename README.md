@@ -1,19 +1,13 @@
 # Task1
 
-**StudentsLoader.py:**
-  - loads the list of students.
-  
-**RoomsLoader.py:**
-  - loads the list of rooms.
-  
+**JsonLoader.py:**
+  - loads the required json file and returns the dictionary.
+
 **UnionHostelList.py:**
   - returns a combined dictionary .
   
-**SaveHostelJson.py:**
-  - saving a combined dictionary in jsom format.
-  
-**SaveHostelXml.py:**
-  - saving a combined dictionary in xml format.
-  
+**HostelSaver.py:**
+  - implements two methods(saving_json and saving_xml) for saving the result in the required format.
+    
 **main.py**
-  - calls either **SaveHostelJson** or **SaveHostelXml** depending on the parameter **"format_"**.
+  - parses the arguments and calls either **saving_json** or **saving_xml** method of Saver class, depending on the parameter **"format_"**.
