@@ -1,16 +1,13 @@
-from StudentsLoader import Students
-from RoomsLoader import Rooms
+from JsonLoader import Loader
 
 
 class HostelList:
-    def __init__(self, students_path: str, rooms_path: str):
-        self.students_list = Students(students_path).students_list
-        self.rooms_list = Rooms(rooms_path).rooms_list
-        self.hostel_list = self.__hostel_list()
-
-    def __hostel_list(self):
-        hostel_list = self.rooms_list[:]
-        for student in self.students_list:
+    @staticmethod
+    def getting_hostel_list(students_path: str, rooms_path: str):
+        students_list = Loader.load(students_path)
+        rooms_list = Loader.load(rooms_path)
+        hostel_list = rooms_list[:]
+        for student in students_list:
                 for room in hostel_list:
                     if 'students' in room.keys():
                         if 'room' in student.keys() and room['id'] == student['room']:
