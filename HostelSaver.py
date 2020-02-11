@@ -4,21 +4,26 @@ import json
 
 
 class Saver:
-    def save(self, hostel_list: dict, format_: str):
+    @staticmethod
+    def save(hostel_list: dict, format_: str):
         if format_.lower() == 'json':
-            return self.__saving_json(hostel_list)
+            return JsonSaver.save(hostel_list)
         elif format_.lower() == 'xml':
-            return self.__saving_xml(hostel_list)
+            return XmlSaver.save(hostel_list)
         else:
             raise ValueError('Invalid format.')
 
+
+class JsonSaver:
     @staticmethod
-    def __saving_json(hostel_list: dict):
+    def save(hostel_list: dict):
         with open('Hostel.json', 'w') as write_file:
             json.dump(hostel_list, write_file, indent=4)
 
+
+class XmlSaver:
     @staticmethod
-    def __saving_xml(hostel_list: dict):
+    def save(hostel_list: dict):
         xml = dicttoxml(hostel_list)
         pretty_xml = parseString(xml).toprettyxml()
         with open('Hostel.xml', 'w') as write_file:
