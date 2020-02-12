@@ -1,14 +1,14 @@
-from JsonLoader import Loader
+from loader import Loader
 
 
-class HostelList:
+class StudentsRoomsMerger:
     @staticmethod
-    def getting_hostel_list(students_path: str, rooms_path: str):
+    def merge(students_path: str, rooms_path: str):
         students_list = Loader.load(students_path)
         rooms_list = Loader.load(rooms_path)
-        hostel_list = rooms_list[:]
+        students_rooms_list = rooms_list[:]
         for student in students_list:
-                for room in hostel_list:
+                for room in students_rooms_list:
                     if 'students' in room.keys():
                         if 'room' in student.keys() and room['id'] == student['room']:
                             del student['room']
@@ -16,4 +16,4 @@ class HostelList:
                     else:
                         room['students'] = []
 
-        return hostel_list
+        return students_rooms_list

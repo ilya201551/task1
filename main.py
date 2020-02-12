@@ -1,5 +1,5 @@
-from HostelSaver import Saver
-from UnionHostelList import HostelList
+from saver import Saver
+from merger import StudentsRoomsMerger
 import argparse
 
 
@@ -14,8 +14,8 @@ def parsing_args():
 
 def main():
     args = parsing_args()
-    hostel_list = HostelList.getting_hostel_list(args.students_path, args.rooms_path)
-    Saver().save(hostel_list, args.format_)
+    students_rooms_list = StudentsRoomsMerger.merge(args.students_path, args.rooms_path)
+    Saver().save(students_rooms_list, args.format_)
 
 
 if __name__ == '__main__':
