@@ -8,12 +8,8 @@ class StudentsRoomsMerger:
         rooms_list = Loader.load(rooms_path)
         students_rooms_list = rooms_list[:]
         for student in students_list:
-                for room in students_rooms_list:
-                    if 'students' in room.keys():
-                        if 'room' in student.keys() and room['id'] == student['room']:
-                            del student['room']
-                            room['students'].append(student)
-                    else:
-                        room['students'] = []
-
+            if 'students' in students_rooms_list[student['room']]:
+                students_rooms_list[student['room']]['students'].append(student)
+            else:
+                students_rooms_list[student['room']]['students'] = [student]
         return students_rooms_list
