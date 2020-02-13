@@ -1,12 +1,12 @@
 # Task1
 
-**JsonLoader.py:**
+**loader.py:**
   - loads the required json file and returns the dictionary.
 
-**UnionHostelList.py:**
+**merger.py:**
   - returns a combined dictionary .
   
-**HostelSaver.py:**
+**sever.py:**
   - the **save()** method of Saver class checks the format and calls the save method of one of the classes(JsonSaver/XmlSaver) to return the result in the desired format.
 
 **main.py:**
