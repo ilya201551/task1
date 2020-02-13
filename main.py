@@ -1,4 +1,4 @@
-from saver import Saver
+from saver import JsonSaver, XmlSaver
 from merger import StudentsRoomsMerger
 import argparse
 
@@ -15,7 +15,15 @@ def parsing_args():
 def main():
     args = parsing_args()
     students_rooms_list = StudentsRoomsMerger.merge(args.students_path, args.rooms_path)
-    Saver().save(students_rooms_list, args.format_)
+
+    savers = {
+        'json': JsonSaver(),
+        'xml': XmlSaver(),
+        }
+    try:
+        return savers[args.format_.lower()].save(students_rooms_list)
+    except KeyError:
+        raise ValueError('Invalid format.')
 
 
 if __name__ == '__main__':

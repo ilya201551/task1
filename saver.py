@@ -1,19 +1,14 @@
+import json
 from dicttoxml import dicttoxml
 from xml.dom.minidom import parseString
-import json
+from abc import abstractmethod, ABC
 
 
-class Saver:
+class Saver(ABC):
     @staticmethod
-    def save(students_rooms_list: dict, format_: str):
-        savers = {
-            'json': JsonSaver(),
-            'xml': XmlSaver(),
-        }
-        try:
-            return savers[format_.lower()].save(students_rooms_list)
-        except KeyError:
-            raise ValueError('Invalid format.')
+    @abstractmethod
+    def save(students_rooms_list: dict):
+        pass
 
 
 class JsonSaver:
