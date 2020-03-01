@@ -1,4 +1,5 @@
 from saver import JsonSaver, XmlSaver
+from loader import JsonLoader
 from merger import StudentsRoomsMerger
 import argparse
 
@@ -14,7 +15,9 @@ def parsing_args():
 
 def main():
     args = parsing_args()
-    students_rooms_list = StudentsRoomsMerger.merge(args.students_path, args.rooms_path)
+    students_list = JsonLoader.load(args.students_path)
+    rooms_list = JsonLoader.load(args.rooms_path)
+    students_rooms_list = StudentsRoomsMerger.merge(students_list, rooms_list)
 
     savers = {
         'json': JsonSaver(),

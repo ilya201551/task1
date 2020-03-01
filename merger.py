@@ -1,11 +1,6 @@
-from loader import JsonLoader
-
-
 class StudentsRoomsMerger:
     @staticmethod
-    def merge(students_path: str, rooms_path: str):
-        students_list = JsonLoader.load(students_path)
-        rooms_list = JsonLoader.load(rooms_path)
+    def merge(students_list: list, rooms_list: list):
         students_rooms_list = rooms_list[:]
         for student in students_list:
             if 'students' in students_rooms_list[student['room']]:
